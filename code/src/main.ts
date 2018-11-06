@@ -1,4 +1,9 @@
+import { Caculator } from "./decorate/methodDecorator";
+
 const fn = () => {
-  console.log('xxxx');
+  const c = new Caculator();
+  const result = c.sum(3, 2);
+  console.log('real world => ', result);
+
 };
 fn();
